@@ -13,7 +13,8 @@ load_dotenv()
 app = Flask(__name__)
 
 # OpenAI 클라이언트 초기화
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=os.getenv("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
+"))
 
 def kakao_text(text):
     """카카오톡 텍스트 응답 규격 생성 (1000자 제한 안전장치)"""
